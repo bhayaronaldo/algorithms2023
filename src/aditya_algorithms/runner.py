@@ -1,3 +1,3 @@
-from test import *
+from testCode import printElements
 
 
