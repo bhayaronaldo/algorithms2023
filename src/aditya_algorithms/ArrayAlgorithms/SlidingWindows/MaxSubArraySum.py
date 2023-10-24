@@ -10,16 +10,48 @@
 
 def maximumSubArraySum(A: list[int], k: int) -> float:
     # write the body of the program here
-    maxsum = float('-inf')
-    for i in range(len(A)-k+1):
-        list_sum = sum(A[i:i+k])
-        if(list_sum>maxsum):
+    maxsum = float("-inf")
+    for i in range(len(A) - k + 1):
+        list_sum = sum(A[i : i + k])
+        if list_sum > maxsum:
             maxsum = list_sum
 
     return maxsum
-        
 
 
-if __name__ == '__main__':
-    assert maximumSubArraySum([1,2,3,4,10,8,9,5,6,7,], 3) == 27
-    print(maximumSubArraySum([1,2,3,4,10,8,9,5,6,7,], 3))
+if __name__ == "__main__":
+    assert (
+        maximumSubArraySum(
+            [
+                1,
+                2,
+                3,
+                4,
+                10,
+                8,
+                9,
+                5,
+                6,
+                7,
+            ],
+            3,
+        )
+        == 27
+    )
+    print(
+        maximumSubArraySum(
+            [
+                1,
+                2,
+                3,
+                4,
+                10,
+                8,
+                9,
+                5,
+                6,
+                7,
+            ],
+            3,
+        )
+    )

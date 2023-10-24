@@ -1,5 +1,6 @@
 # complete the following function:
-# removeDuplicate 
+# removeDuplicate
+
 
 def removeDuplicate(A: list[int]) -> list[int]:
     # mylist = set()
@@ -12,9 +13,5 @@ def removeDuplicate(A: list[int]) -> list[int]:
 
 
 if __name__ == "__main__":
-    A = [1,1,1,2,3,4,3,2,2,5,1,3]
-    assert sorted(removeDuplicate(A)) == [1,2,3,4,5]
-
-
-
-    
+    A = [1, 1, 1, 2, 3, 4, 3, 2, 2, 5, 1, 3]
+    assert sorted(removeDuplicate(A)) == [1, 2, 3, 4, 5]
